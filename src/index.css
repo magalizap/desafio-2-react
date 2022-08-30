@@ -5,9 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f1f5b8;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.achicarCarrito{
+  width: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 25px;
+  height: 50px;
+}
+p{
+  width: 45px;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+.flex{
+  display: flex;
 }
