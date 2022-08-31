@@ -6,7 +6,7 @@ export const NavBar = ({cart}) => {
   return (
       <nav className='teal darken-4'>
           <div className="nav-wrapper">
-            <a href="../App.js" className="brand-logo">Clothes</a>
+            <a href="../App.js" className="brand-logo">Gilmore</a>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li>
                 <a href="sass.html">Shop</a>
