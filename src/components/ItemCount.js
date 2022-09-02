@@ -1,8 +1,7 @@
-import React from 'react'
-
+import { useState } from 'react';
 const ItemCount = ({stock, initial, onAdd}) => {
 
-  const [valor, setValor] = React.useState(1);
+  const [valor, setValor] = useState(1);
   return (
     <>
         <div className='alinear'>
