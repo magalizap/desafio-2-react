@@ -1,17 +1,19 @@
 import React from 'react'
-import ItemCount from './ItemCount'
 import ItemList from './ItemList'
-
-
-
+import { useEffect, useState } from 'react'
+import { getProductos } from '../app/api'
 
 export const ItemListContainer = ({saludo}) => {
+  const [productos, setProductos] = useState([])
+  useEffect(() =>{
+    getProductos().then((data) =>{
+      setProductos(data)
+    })
+  }, [])
   return (
     <>
       <h1>{saludo}</h1>
-      <ItemCount stock={5} initial={1} onAdd={(valor)=>alert("Añadiste "+ valor + " productos al carrito")}/>
-      <ItemList/> 
-
+      <ItemList products={productos}/>
     </>
 
   )

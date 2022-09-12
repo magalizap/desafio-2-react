@@ -48,6 +48,15 @@ h1{
 .imgProductos{
   width: 100%;
 }
+
+.imgProduct{
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 50%;
+}
+.width{
+  width: 50%;
+}
 .productoTitle{
   width: 100%;
   font-size: 1em;
@@ -69,4 +78,14 @@ h1{
   justify-content: center;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.product{
+  display: flex;
+  background-color:#fff;
+  width: 80%;
+}
+
+.description{
+  width: 50%;
 }

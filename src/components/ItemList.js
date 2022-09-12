@@ -1,19 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Item from './Item'
-import { getProductos } from '../app/api'
 
 
-const ItemList = () => {
-  const [productos, setProductos] = useState([])
-  useEffect(() =>{
-    getProductos().then((data) =>{
-      setProductos(data)
-    })
-  }, [])
+
+const ItemList = ({products}) => {
 
   return (
     <main className='alinearProductos'>
-        {productos.map((producto, id) => <Item key={id} producto = {producto}/>)}
+        {products.map((producto, id) => <Item key={id} producto = {producto}/>)}
     </main>
   )
 }
